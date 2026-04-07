@@ -35,3 +35,7 @@ def users():
 
 if __name__ == "__main__":
     app.run()
+
+@app.route("/")
+def home():
+    return "API funcionando"
