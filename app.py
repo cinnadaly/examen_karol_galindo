@@ -12,8 +12,7 @@ def get_connection():
         f'UID={os.environ.get("DB_USER")};'
         f'PWD={os.environ.get("DB_PASSWORD")}'
         "Encrypt=yes;"
-        "TrustServerCertificate=no;"
-        "Connection Timeout=30;"
+        "TrustServerCertificate=yes;"
     )
 
 @app.route('/users')
