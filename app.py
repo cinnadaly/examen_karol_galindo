@@ -10,7 +10,7 @@ def get_connection():
         f'SERVER={os.environ.get("SQL_SERVER")};'
         f'DATABASE={os.environ.get("DB_NAME")};'
         f'UID={os.environ.get("DB_USER")};'
-        f'PWD={os.environ.get("DB_PASSWORD")}'
+        f'PWD={os.environ.get("DB_PASSWORD")};'
         "Encrypt=yes;"
         "TrustServerCertificate=yes;"
     )
